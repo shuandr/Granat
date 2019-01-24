@@ -1,0 +1,115 @@
+[{
+    "id": "001",
+    "name": "Вермут Martini Bianco біле 15%",
+    "brand": "Martini",
+    "size": 1,
+    "price": 178
+}, {
+    "id": "002",
+    "name": "Вермут Martini Bitter 25%",
+    "brand": "Martini",
+    "size": 1,
+    "price": 206
+}, {
+    "id": "003",
+    "name": "Вермут Martini Bitter Riserva 28,5%",
+    "brand": "Martini",
+    "size": 0.70,
+    "price": 310
+}, {
+    "id": "004",
+    "name": "Вермут Martini Extra Dry 18%",
+    "brand": "Martini",
+    "size": 1,
+    "price": 178
+}, {
+    "id": "005",
+    "name": "Вермут Martini Riserva Speciale Ambrato",
+    "brand": "Martini",
+    "size": 0.75,
+    "price": 310
+}, {
+    "id": "006",
+    "name": "Вермут Martini Riserva Speciale Rubino",
+    "brand": "Martini",
+    "size": 0.75,
+    "price": 310
+}, {
+    "id": "007",
+    "name": "Вермут Martini Rosato рожеве 15%",
+    "brand": "Martini",
+    "size": 1,
+    "price": 207
+}, {
+    "id": "008",
+    "name": "Вермут Martini Rosso червоне 15%",
+    "brand": "Martini",
+    "size": 1,
+    "price": 178
+}, {
+    "id": "009",
+    "name": "Вино 49 50 N Dornfelder Merlot червоне сухе",
+    "brand": "49 50 N",
+    "size": 0.75,
+    "price": 217
+}, {
+    "id": "010",
+    "name": "Вино 49 50 N Grauburgunder Chardonnay біле сухе",
+    "brand": "49 50 N",
+    "size": 0.75,
+    "price": 217
+}, {
+    "id": "011",
+    "name": "Вино 49 50 N Riesling Sauvignon Blanc сухе",
+    "brand": "49 50 N",
+    "size": 0.75,
+    "price": 217
+}, {
+    "id": "012",
+    "name": "Вино 49 50 N Spatburgunder Cabernet Sauvignon червоне сухе",
+    "brand": "49 50 N",
+    "size": 0.75,
+    "price": 217
+}, {
+    "id": "013",
+    "name": "Вино Castellani Chianti Colli Senesi червоне сухе",
+    "brand": "Castellani",
+    "size": 0.75,
+    "price": 247
+}, {
+    "id": "014",
+    "name": "Вино Castellani Chianti Reserva червоне сухе",
+    "brand": "Castellani",
+    "size": 0.75,
+    "price": 218
+}, {
+    "id": "015",
+    "name": "Вино Castellani Chianti червоне сухе",
+    "brand": "Castellani",
+    "size": 0.75,
+    "price": 159
+}, {
+    "id": "016",
+    "name": "Вино Castellani Nobile di Montepulciano червоне сухе",
+    "brand": "Castellani",
+    "size": 0.75,
+    "price": 643
+}, {
+    "id": "017",
+    "name": "Вино Castellani Pinot Grigio біле сухе",
+    "brand": "Castellani",
+    "size": 0.75,
+    "price": 159
+}, {
+    "id": "018",
+    "name": "Вино Castellani Toscana Bianco біле сухе",
+    "brand": "Castellani",
+    "size": 0.75,
+    "price": 150
+}, {
+    "id": "019",
+    "name": "Вино Castellani Toscana Rosso червоне сухе",
+    "brand": "Castellani",
+    "size": 0.75,
+    "price": 150
+}]

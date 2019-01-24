@@ -1,0 +1,108 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Для ресторанів | Автоматизація закупівель</title>
+    <meta property="og:description" content="для ресторанів і не тільки..."/>
+    <meta property="og:image" content="https://granat-garden.com.ua/og_image.jpg">
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content= "http://granat-garden.com.ua/" />
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-sanitize.js"></script>
+    <script src="assets/js_plugins/myAngular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular-route.js"></script>
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="icon" type="image/png" href="favicon-16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="favicon-32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="favicon-96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="favicon-192.png" sizes="192x192">
+  </head>
+  <body>
+    <div class="shop-outer-wrap">
+      
+      <nav>
+      	<div class="grid-x pome">
+      		
+      		<div class="cell auto  top-menu-shop text-right" ></div>
+      		<a href="index.html"><div class="cell main-logo"><img src="assets/img/logo_w.svg" alt=""></div></a>
+      		<div class="cell auto  top-menu-shop text-right">
+      			<a href="checkout.html">
+      				<button style="width: 60px; padding: 0.4rem" class="button pome-bg" >
+      				<img src="assets/img/basket_light.svg" alt="">
+      				</button>
+      			</a>
+      		</div>
+      	</div>
+      	
+      </nav>      <div ng-app="shopGranat" ng-controller="shopGranat"
+      	class="grid-container shop-content white-bg">
+      	
+      	<div style="min-height: 90vh" class="grid-x grid-margin-x">
+      		<div class="cell large-3 ">
+      			<ul class="accordion" data-accordion >
+      				<li ng-repeat="category in categories" class="accordion-item" data-accordion-item>
+      					<a href="#" class="accordion-title uppercase plum">
+      						<h6>{[{category.name}]}</h6>
+      					</a>
+      					<div class="accordion-content" data-tab-content>
+      						<p ng-repeat="sub in category.sub" class="uppercase">
+      						{[{sub.subName}]}
+      						</p>
+      						
+      						
+      						
+      					</div>
+      				</li>
+      			</ul>
+      			
+      		</div>
+      		
+      		
+      		<div class="cell auto">
+      			<div class="grid-x small-up-2 medium-up-3 large-up-4" data-equalizer>
+      				<div ng-repeat="item in products" class="cell" >
+      					<div class="card prod-item" data-equalizer-watch>
+      						<img src="assets/img/products/{[{item.id}]}.jpg" alt="">
+      						<div class="grid-y" >
+      							<div class="cell  text-center prod-name ">{[{item.name}]}</div>
+      							<div class="cell ">
+      								<div class="grid-x">
+      									<div class="cell auto prod-brand">{[{item.brand}]}</div>
+      									<div class="cell shrink prod-size">{[{item.size}]}</div>
+      								</div>
+      							</div>
+      							<div class="cell item-last-line">
+      								<div class="grid-x">
+      									<div class="cell auto prod-price">{[{item.price}]}
+      										<span class="grn">грн</span>
+      									</div>
+      									<div class="cell shrink prod-quant text-center">кількість <br>
+      										<input type="number" class="quant-input" value="1" min="1" max="99">
+      									</div>
+      									<div class="cell shrink basket">
+      										<button style="width: 48px"class="button purple-bg">
+      										<a href="">
+      											<img src="assets/img/basket_light.svg" alt="">
+      										</a>
+      									</button></div>
+      								</div>
+      							</div>
+      						</div>
+      					</div>
+      				</div>
+      			</div>
+      		</div>
+      	</div>
+      </div>
+      
+    </div>
+    <footer class=" grid-x align-bottom">
+    				<div class="cell text-center light"><p>всі права застережено | All Right Reserved. 2018</p>
+    			</div>
+    		</footer>    
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
