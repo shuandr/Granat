@@ -37,10 +37,10 @@
       		</div>
       	</div>
       	
-      </nav>      <div ng-app="shopGranat" ng-controller="shopGranat"
+      </nav>      <div id="granat-shop" ng-app="shopGranat" ng-controller="shopGranat"
       	class="grid-container shop-content white-bg">
       	
-      	<div style="min-height: 90vh" class="grid-x grid-margin-x">
+      	<div class="grid-x grid-margin-x">
       		<div class="cell large-3 ">
       			<ul class="accordion" data-accordion >
       				<li ng-repeat="category in categories" class="accordion-item" data-accordion-item>
@@ -48,9 +48,13 @@
       						<h6>{[{category.name}]}</h6>
       					</a>
       					<div class="accordion-content" data-tab-content>
-      						<p ng-repeat="sub in category.sub" class="uppercase">
-      						{[{sub.subName}]}
-      						</p>
+      						<div ng-repeat="sub in category.sub">
+      							<div class="sub-cat">
+      								<a href="#" class="purple uppercase ">
+      									{[{sub.subName}]}
+      								</a>
+      							</div>
+      						</div>
       						
       						
       						
@@ -98,11 +102,11 @@
       	</div>
       </div>
       
-    </div>
     <footer class=" grid-x align-bottom">
     				<div class="cell text-center light"><p>всі права застережено | All Right Reserved. 2018</p>
     			</div>
-    		</footer>    
+    		</footer>    </div>
+    
     <script src="assets/js/app.js"></script>
   </body>
 </html>
