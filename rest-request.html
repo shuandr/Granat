@@ -38,70 +38,34 @@
       		</div>
       	</div>
       	
-      </nav>      <div id="granat-shop" ng-app="shopGranat" ng-controller="shopGranat"
-      	class="grid-container shop-content white-bg">
-      	
-      	<div class="grid-x grid-margin-x">
-      		<div class="cell large-3 ">
-      			<ul class="accordion" data-accordion >
-      				<li ng-repeat="category in categories" class="accordion-item" data-accordion-item>
-      					<a href="{[{category.href}]}" class="accordion-title uppercase plum">
-      						<h6>{[{category.name}]}</h6>
-      					</a>
-      					<div class="accordion-content" data-tab-content>
-      						<div ng-repeat="sub in category.sub">
-      							<div class="sub-cat">
-      								<a href="#" class="purple uppercase ">
-      									{[{sub.subName}]}
-      								</a>
-      							</div>
-      						</div>
-      						
-      						
-      						
-      					</div>
-      				</li>
-      			</ul>
-      			
-      		</div>
-      		
-      		
-      		<div class="cell auto">
-      			<div class="grid-x small-up-2 medium-up-3 large-up-4" data-equalizer>
-      				<div ng-repeat="item in products" class="cell" >
-      					<div class="card prod-item" data-equalizer-watch>
-      						<img src="assets/img/products/{[{item.id}]}.jpg" alt="">
-      						<div class="prod-label"></div>
-      						<div class="grid-y" >
-      							<div class="cell  text-center prod-name ">{[{item.name}]}</div>
-      							<div class="cell ">
-      								<div class="grid-x">
-      									<div class="cell auto prod-brand">{[{item.brand}]}</div>
-      									<div class="cell shrink prod-size">{[{item.size}]}</div>
-      								</div>
-      							</div>
-      							<div class="cell item-last-line">
-      								<div class="grid-x">
-      									<div class="cell auto prod-price">{[{item.price}]}
-      										<span class="grn">грн</span>
-      									</div>
-      									<div class="cell shrink prod-quant text-center">кількість <br>
-      										<input type="number" class="quant-input" value="1" min="1" max="99">
-      									</div>
-      									<div class="cell shrink basket">
-      										<button style="width: 48px"class="button purple-bg">
-      										<a href="">
-      											<img src="assets/img/basket_light.svg" alt="">
-      										</a>
-      									</button></div>
-      								</div>
-      							</div>
-      						</div>
-      					</div>
-      				</div>
+      </nav>      <div class="grid-container shop-content white-bg">
+      	<h4 class="uppercase plum text-center">Запит ресторану на продукцію</h4>
+      	<form action="">
+      		<div class="grid-x grid-margin-x">
+      			<div class="cell medium-6">
+      				
+      				<input type="text" id="product" name="" placeholder="запитувана продукція *" required >
+      				<input type="text" id="country" name="" placeholder="країна виробник *" required >
+      				<input type="text" id="volume" name="" placeholder="об'єм пакування" >
+      				<input type="text" id="time" name="" placeholder="періодичність поставок" >
       			</div>
+      			<div class="cell medium-6">
+      				
+      				<input type="text" id="name" name="ім’я" placeholder="назва закладу *" required >
+      				<input type="tel" id="phone" name="телефон" placeholder="телефон">
+      				<input type="text" id="email" name="email" placeholder="e-mail *" required><br>
+      				<p class="pome">	* обов’язкові поля</p>
+      				<span id="email-invalid" style="display:none;">
+      				неправильний емейл</span>
+      			</div>
+      		</div><br>	
+      		<div class="text-center">
+      			<button class="purple-bg button uppercase"><i class="fa fa-paper-plane "></i>&nbsp; надіслати</button>
       		</div>
       	</div>
+      </form>
+      <div style="display:none;" id="thankyou_message">
+      	<h5 class="uppercase cherry text-center">Дякуємо за запит! <br> Незабаром ми вам відповімо</h5>
       </div>
       
     <footer class=" grid-x align-bottom">

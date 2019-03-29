@@ -50,4 +50,15 @@
     "name": "Посуд"
 }, {
     "name": "Барне та кухонне обладнання"
+}, {
+    "name": "Сервіс обладнання"
+}, {
+    "name": "Навчання",
+    "href": "education.html"
+}, {
+    "name": "HACCP",
+    "href": "haccp.html"
+}, {
+    "name": "Запити ресторанів",
+    "href": "rest-request.html"
 }]
