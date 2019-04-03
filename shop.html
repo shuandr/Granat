@@ -67,42 +67,52 @@
       		
       		
       		<div class="cell auto">
-      			<div class="grid-x small-up-2 medium-up-3 large-up-4" data-equalizer>
+      			<div class="grid-x small-up-2 medium-up-3 large-up-4" data-equalizer data-equalize-by-row="true">
       				<div ng-repeat="item in products" class="cell" >
       					<div class="card prod-item" data-equalizer-watch>
-      						<img src="assets/img/products/{[{item.id}]}.jpg" alt="">
-      						<div class="prod-label"></div>
-      						<div class="grid-y" >
-      							<div class="cell  text-center prod-name ">{[{item.name}]}</div>
+      						<div class="grid-x " style="min-height: 100%">
       							<div class="cell ">
-      								<div class="grid-x">
-      									<div class="cell auto prod-brand">{[{item.brand}]}</div>
-      									<div class="cell shrink prod-size">{[{item.size}]}</div>
-      								</div>
+      								<img src="assets/img/products/{[{item.id}]}.jpg" alt="">
       							</div>
-      							<div class="cell item-last-line">
-      								<div class="grid-x">
-      									<div class="cell auto prod-price">{[{item.price}]}
-      										<span class="grn">грн</span>
+      							<div class="cell align-self-bottom">
+      								<div class="grid-y" >
+      									<div class="cell  text-center prod-name ">{[{item.name}]}</div>
+      									<div class="cell ">
+      										<div class="grid-x">
+      											<div class="cell auto prod-brand">{[{item.brand}]}</div>
+      											<div class="cell shrink prod-size">{[{item.size}]}</div>
+      										</div>
       									</div>
-      									<div class="cell shrink prod-quant text-center">кількість <br>
-      										<input type="number" class="quant-input" value="1" min="1" max="99">
+      									<div class="cell item-last-line">
+      										<div class="grid-x">
+      											<div class="cell auto prod-price">{[{item.price}]}
+      												<span class="grn">грн</span>
+      											</div>
+      											<div class="cell shrink prod-quant text-center">кількість <br>
+      												<input type="number" class="quant-input" value="1" min="1" max="99">
+      											</div>
+      											<div class="cell shrink basket">
+      												<button style="width: 48px"class="button purple-bg">
+      												<a href="">
+      													<img src="assets/img/basket_light.svg" alt="">
+      												</a>
+      											</button></div>
+      										</div>
       									</div>
-      									<div class="cell shrink basket">
-      										<button style="width: 48px"class="button purple-bg">
-      										<a href="">
-      											<img src="assets/img/basket_light.svg" alt="">
-      										</a>
-      									</button></div>
       								</div>
+      								
       							</div>
       						</div>
+      						<!-- <div class="prod-label"></div> -->
       					</div>
       				</div>
       			</div>
       		</div>
       	</div>
       </div>
+      <script>
+      	
+      </script>
       
     <footer >
     	<div class="grid-container">
